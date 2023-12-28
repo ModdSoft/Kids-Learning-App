@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "app/assets/fonts/actionis.ttf",
+      "sha1": "39270ce353235cacba33cbfc1c7765677e0ddda4"
+    },
+    {
+      "path": "app/assets/fonts/budmo-jiggler.otf",
+      "sha1": "830b707f1f16c6c6455cb6a4759abc832b9fe3a5"
+    },
+    {
+      "path": "app/assets/fonts/diskoteque.ttf",
+      "sha1": "fdbff8ba046da2f31ae1dc571d73610d2ede72ca"
+    },
+    {
+      "path": "app/assets/fonts/strenuous-bl.otf",
+      "sha1": "39c919c6df9b1bec70d303a01bf764888e2af442"
+    },
+    {
+      "path": "app/assets/fonts/strenuous-three-d.otf",
+      "sha1": "7f5c8db5ebf369bdbea695bdc9ac24cbc3accab0"
+    }
+  ]
+}
