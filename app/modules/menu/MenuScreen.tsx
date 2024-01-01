@@ -1,20 +1,20 @@
+import {ParamListBase, useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import React, {FC} from 'react';
 import {
-  Text,
   ImageBackground,
   ImageSourcePropType,
   StyleSheet,
+  Text,
+  TextStyle,
   TouchableOpacity,
   View,
-  TextStyle,
 } from 'react-native';
-import React, {FC, useEffect} from 'react';
-import {styles} from './MenuScreenStyles';
-import {Images} from '../../assets';
 import {Image} from 'react-native-animatable';
-import {themeColors} from '../../theme';
-import {ParamListBase, useNavigation} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
+import {Icons, Images} from '../../assets';
 import {useBackgroundMusic} from '../../hooks';
+import {themeColors} from '../../theme';
+import {styles} from './MenuScreenStyles';
 
 const MenuCard = ({
   menuImage,
@@ -87,7 +87,7 @@ const MenuScreen: FC = () => {
     <ImageBackground source={Images.menuBg2} style={styles.screen}>
       <MenuCard
         menuImage={Images.menuAlphabets}
-        arrowIcon={Images.arrows}
+        arrowIcon={Icons.pinkArrow}
         menuText="Learn Alphabets"
         backgroundColor={themeColors.primary}
         textColor={themeColors.ultraRed}
@@ -96,7 +96,7 @@ const MenuScreen: FC = () => {
       />
       <MenuCard
         menuImage={Images.menuNumbers}
-        arrowIcon={Images.yellowArrow}
+        arrowIcon={Icons.yellowArrow}
         menuText="Learn Numbers"
         backgroundColor={themeColors.navyBlue}
         textColor={themeColors.yellow}

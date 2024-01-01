@@ -7,7 +7,5 @@ export default {
   menuAlphabets: require('./menuAlphabets.png'),
   menuNumbers: require('./menuNumbers.png'),
   menuBg2: require('./menuBg2.jpg'),
-  arrows: require('./arrows.png'),
-  yellowArrow: require('./yellowArrow.png'),
   learnBg: require('./learnBg.jpg'),
 };
