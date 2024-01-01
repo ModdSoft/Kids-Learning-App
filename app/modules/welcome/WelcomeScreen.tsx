@@ -5,6 +5,7 @@ import {Image, ImageBackground, Text} from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import Slider from 'react-native-slide-to-unlock';
 import {Images} from '../../assets';
+import {useBackgroundMusic} from '../../hooks';
 import {styles} from './WelcomeScreenStyles';
 
 const WelcomeScreen: FC = () => {
@@ -13,6 +14,8 @@ const WelcomeScreen: FC = () => {
   const navigateToMenu = (): void => {
     navigation.navigate('Menu');
   };
+
+  useBackgroundMusic();
 
   return (
     <ImageBackground
