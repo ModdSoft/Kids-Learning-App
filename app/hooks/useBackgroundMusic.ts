@@ -13,7 +13,7 @@ const useBackgroundMusic = () => {
         console.log('failed to load sound', error);
         return;
       }
-      backgroundMusic.setVolume(0.6);
+      backgroundMusic.setVolume(0.15);
       backgroundMusic.setNumberOfLoops(-1);
       backgroundMusic.play(success => {
         if (success) {
@@ -28,8 +28,10 @@ const useBackgroundMusic = () => {
   useEffect(() => {
     const handleAppStateChange = (nextAppState: AppStateStatus) => {
       if (nextAppState === 'background') {
+        console.log('background');
         backgroundMusic.pause();
-      } else if (nextAppState === 'active') {
+      } else if (nextAppState === 'active' && backgroundMusic.isPlaying()) {
+        console.log('active');
         backgroundMusic.play();
       }
     };
@@ -47,6 +49,7 @@ const useBackgroundMusic = () => {
   useFocusEffect(
     useCallback(() => {
       backgroundMusic.play();
+
       return () => {
         backgroundMusic.pause();
       };

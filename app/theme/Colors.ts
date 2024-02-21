@@ -17,7 +17,7 @@ enum themeColors {
   red = '#FF0000',
   dullRed = '#db241a',
   green = '#1e961a',
-  orange = '#FFA500',
+  orange = '#f0a337',
   brownOrange = '#b8621b',
   darkYellow = '#f7c931',
   yellow = '#ebd038',
@@ -32,6 +32,8 @@ enum themeColors {
   accentWhite = '#EEEEEE',
   transparentGray = '#4b4f58e6',
   accentBlue100 = '#00adb51a',
+  purple = '#492d6b',
+  maroon = '#6b3850',
 }
 
 export default themeColors;
