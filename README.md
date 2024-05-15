@@ -1,5 +1,5 @@
 
-# Snake Game
+# Kids Learning Game
 
 Welcome to Kids Learning App! This educational app is designed to make learning fun and interactive for young children, focusing on alphabets (ABCD) and numbers (1234).
 
